@@ -1,0 +1,34 @@
+<!--index.wxml-->
+<view class="container">
+  <!-- 
+  <view class='wrap'>
+    <image src="../../images/back.png"></image>
+  </view>
+  -->
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <!-- <text class="userinfo-nickname">{{userInfo.nickName}}</text> -->
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+  <view class='cubes-container'>
+    <button class="{{!isStart?'cube':'small-cube'}}" hover-class='btn-hover' bindtap='startEat'>
+      <text>{{buttonText}}</text>
+    </button>
+  </view>
+  <view hidden='{{!isStart}}'>
+    <view class="{{!isEnd?'food-cube':'foodend-cube'}}"><label>{{food}}</label></view>
+  </view>
+  <view class='cubes-container' >
+    <!-- <view class='cube'></view>
+    <view class='cube'></view>
+    <view class='cube'></view>
+    <view class='cube'></view> -->
+  </view>
+  <view>
+  </view>
+</view>

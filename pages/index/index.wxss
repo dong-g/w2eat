@@ -1,0 +1,110 @@
+/**index.wxss**/
+page { 
+overflow:hidden; 
+position:fixed; 
+background-image:url('http://www.pandabibi.com/889278225.jpg'); 
+margin: 0px; 
+/*下面的是关键的设置100%显示*/ 
+background-size: 100% 100%; 
+} 
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin: 30rpx 20px;
+  color: rgb(230, 137, 17);
+}
+
+.cubes-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50rpx;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.btn-hover {
+  border: royalblue; 
+}
+
+.cube {
+  width: 350rpx;
+  height: 350rpx;
+  background: burlywood;
+  margin: 10rpx;
+  border-radius: 50%;
+  display: table;
+}
+
+.small-cube {
+  width: 250rpx;
+  height: 250rpx;
+  background: burlywood;
+  margin: 10rpx;
+  border-radius: 50%;
+  display: table;
+}
+
+.cube text {
+ vertical-align: middle;
+ color: blanchedalmond;
+ display: table-cell;
+ font-size: 60rpx;
+}
+
+.small-cube text {
+ vertical-align: middle;
+ color: blanchedalmond;
+ display: table-cell;
+ font-size: 40rpx;
+}
+
+.food-cube {
+  width: 250rpx;
+  height: 250rpx;
+  background: rgb(146, 140, 179);
+  margin: 10rpx;
+  border-radius: 50%;
+  display: table;
+}
+
+.foodend-cube {
+  width: 250rpx;
+  height: 250rpx;
+  background: grey;
+  margin: 10rpx;
+  border-radius: 50%;
+  display: table;
+}
+
+.food-cube label{
+  vertical-align: middle;
+  text-align: center;
+  color: white;
+  display: table-cell;
+  font-size: 40rpx;
+}
+
+.foodend-cube label{
+  vertical-align: middle;
+  text-align: center;
+  color: white;
+  display: table-cell;
+  font-size: 40rpx;
+}
